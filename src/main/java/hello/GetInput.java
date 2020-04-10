@@ -7,9 +7,9 @@ public class GetInput {
         Scanner myObj = new Scanner(System.in);
         System.out.println("Enter your name");
 
-        String userName = myObj.nextLine();
+        String name = myObj.nextLine();
 
-        return userName;
+        return name;
     }
 }
 

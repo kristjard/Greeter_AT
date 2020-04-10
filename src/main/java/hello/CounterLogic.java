@@ -1,18 +1,18 @@
 package hello;
 
 
+
+
 public class CounterLogic{
+        //static String name = GetInput.getInput();
 
-    static String string = GetInput.getInput();
-
-    public static String charDetector()
+   /* public static String charDetector(String name)
     {
         String vastus1 = "" + "only letters";
         String vastus2 = "numbers";
         String vastus3 = "special characters";
-        String vastus4 = "We are on a strictly first name basis here, only one name per person allowed. If you really" +
-                " can't go a frickin day with out using all of your names, then string them together with a goddamned" +
-                " underscore!!!";
+        String vastus4 = "No empty spaces allowed, try and use only one name. Or if you insist on using more than one" +
+                " try using an underscore, maybe??";
         String vastus = "";
 
         int i = 0;
@@ -20,17 +20,17 @@ public class CounterLogic{
         boolean also_nrs = false;
         boolean also_specials = false;
         boolean spacebar = false;
-        for(i=0; i < string.length(); i++){
+        for(i=0; i < name.length(); i++){
 
-            if (string.charAt(i) >= 65 && string.charAt(i) <= 90
-                    || string.charAt(i) >= 97 && string.charAt(i) <= 122) {
+            if (name.charAt(i) >= 65 && name.charAt(i) <= 90
+                    || name.charAt(i) >= 97 && name.charAt(i) <= 122) {
                 only_ltrs = true;
 
             }
-            else if (string.charAt(i)==32){
+            else if (name.charAt(i)==32){
                 spacebar = true;
             }
-            else if (string.charAt(i) >= 48 && string.charAt(i) <= 57) {
+            else if (name.charAt(i) >= 48 && name.charAt(i) <= 57) {
                 also_nrs = true;
                 only_ltrs = false;
             }
@@ -59,12 +59,12 @@ public class CounterLogic{
             vastus = vastus3;
         }
         return vastus;
-    }
-    public static int charCounter(){
-        int j =0;
+    }*/
+    public static int charCounter(String name){
+        int j;
         int count=0;
-        for(j=0; j< string.length(); j++){
-            if (string.charAt(j) != ' '){
+        for(j=0; j< name.length(); j++){
+            if (name.charAt(j) != ' '){
                 count++;
             }
         }return count;
