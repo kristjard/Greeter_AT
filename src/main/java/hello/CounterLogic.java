@@ -4,15 +4,15 @@ package hello;
 
 
 public class CounterLogic{
-        //static String name = GetInput.getInput();
 
-   /* public static String charDetector(String name)
+
+    public String charDetector(String name)
     {
-        String vastus1 = "" + "only letters";
+        String vastus1 = "only letters";
         String vastus2 = "numbers";
         String vastus3 = "special characters";
         String vastus4 = "No empty spaces allowed, try and use only one name. Or if you insist on using more than one" +
-                " try using an underscore, maybe??";
+                ", try using an underscore, maybe??";
         String vastus = "";
 
         int i = 0;
@@ -59,8 +59,8 @@ public class CounterLogic{
             vastus = vastus3;
         }
         return vastus;
-    }*/
-    public static int charCounter(String name){
+    }
+    public int charCounter(String name){
         int j;
         int count=0;
         for(j=0; j< name.length(); j++){
@@ -69,7 +69,6 @@ public class CounterLogic{
             }
         }return count;
     }
-
 
 
 
