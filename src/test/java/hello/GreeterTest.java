@@ -5,7 +5,9 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
 import static org.junit.Assert.assertEquals;
+import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 
 
@@ -43,7 +45,7 @@ public class GreeterTest
         when(counter.charDetector("Kristjan")).thenReturn("only letters");
 
         //When
-        String result = greeter.sayHello("Kristjan");
+        String result=greeter.sayHello("Kristjan");
 
         //then
         assertEquals("Hello, Kristjan. Your name is 8 digits long and contains only letters.", result);
