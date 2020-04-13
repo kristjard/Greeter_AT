@@ -13,8 +13,7 @@ public class CounterLogic{
         String vastus3 = "special characters";
         String vastus4 = "No empty spaces allowed, try and use only one name. Or if you insist on using more than one" +
                 ", try using an underscore, maybe??";
-        String vastus = "";
-
+        String vastus;
         int i = 0;
         boolean only_ltrs = false;
         boolean also_nrs = false;
